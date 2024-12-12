@@ -22,13 +22,6 @@ import Link from 'next/link'
 import { createAccount, signInUser } from '@/lib/actions/user.action'
 import OTPModal from './OTPModal'
 
-
-
-// Below is the defined form schema
-const formSchema = z.object({
-    username: z.string().min(2).max(50),
-})
-
 // Below we defined that arguments received in the AuthForm is of Type FormType
 type FormType = 'sign-in' | 'sign-up'
 
